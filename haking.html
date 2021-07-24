@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="background: black;">
+    <head>
+        <title>hacking</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style1.css">
+        <script language="JavaScript">
+	
+            var SetTime = 6000;		// 최초 설정 시간(기본 : 초)
+    
+            function msg_time() {	// 1초씩 카운트
+                
+                m = Math.floor(SetTime / 60) + "m" + (SetTime % 60) + "s";	// 남은 시간 계산
+                
+                
+                var msg = "<font color='red'> the laft time is " + m + " ......find the solution^^ </font>";
+                
+                document.all.ViewTimer.innerHTML = msg;	// div 영역에 보여줌 
+                        
+                SetTime--;					// 1초씩 감소
+                
+                if (SetTime < 0) {			// 시간이 종료 되었으면..
+                    
+                    clearInterval(tid);		// 타이머 해제
+                    alert("your computer is hacking");
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1>your computer is mine</h1>
+        
+        <br><br><div id="ViewTimer" style="font-size:60px;"></div><br><br><br>
+        <p>
+            If you clicked on this link you are deceived You are an asshole You can't read this and think it's a hack Then you're right
+        </p>
+        <p>
+            if you want to exit this title, Theoretically, you must be an asshole. You shouldn't have been riding this link.
+            Why did you try to solve your  press th key alt+F4 curiosity here?
+            why are you here why are you here 
+        </p>
+        
+    </body>
+</html>
