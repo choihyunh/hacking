@@ -24,8 +24,8 @@
                     clearInterval(tid);		// 타이머 해제
                     alert("your computer is hacking");
                 }
-                
             }
+            window.onload = function TimerStart(){ tid=setInterval('msg_time()',1000) };
         </script>
     </head>
     <body>
